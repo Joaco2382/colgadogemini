@@ -4,6 +4,19 @@ from logica import JuegoColgado
 from interfaz import Interfaz
 import os
 
+import pygame
+import importlib # Agregar esta linea
+import config  # Agregar esta linea
+import logica  # Agregar esta linea
+
+importlib.reload(config)  # Forzar la recarga de config.py
+importlib.reload(logica)  # Forzar la recarga de logica.py
+
+from logica import JuegoColgado
+from interfaz import Interfaz
+import os
+
+
 def main():
     """Función principal para ejecutar el juego."""
 
